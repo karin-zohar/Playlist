@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+
 
 export function SearchBar(props) {
-  const [searchTerm, setSearchTerm] = useState("");
 
-  function searchVideo(e) {
-    e.preventDefault();
-    //TODO: logic
-  }
-
-  return (
+ const {searchVideo, setSearchTerm, searchTerm} = props
+  
+ return ( 
     <form onSubmit={searchVideo} className="search-bar">
       <input
         onChange={(e) => setSearchTerm(e.target.value)}
@@ -20,5 +16,5 @@ export function SearchBar(props) {
       />
       <button>Search</button>
     </form>
-  );
+  )
 }
