@@ -1,5 +1,7 @@
 .playlist-index {
+  margin-block: 48px;
   display: grid;
-  grid-template-columns: 24px 2fr 3fr 24px;
+  grid-template-columns: 1fr 400px 600px 1fr;
   justify-items: center;
+  row-gap: 42px;
 }

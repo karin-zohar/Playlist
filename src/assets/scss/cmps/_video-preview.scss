@@ -1,0 +1,14 @@
+.video-preview {
+  display: flex;
+  gap: 18px;
+  height: 120px;
+  background-color: $clr2;
+  img {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: fit-content;
+    max-height: 120px;
+    align-self: center;
+  }
+}

@@ -1,0 +1,8 @@
+.search-bar {
+  grid-column: 2 / span 2;
+  input {
+    border-radius: 3px;
+    border: none;
+    margin-inline-end: 12px;
+  }
+}
