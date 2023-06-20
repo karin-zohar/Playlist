@@ -12,7 +12,6 @@ export function SearchBar(props) {
     <form onSubmit={searchVideo} className="search-bar">
       <input
         onChange={(e) => setSearchTerm(e.target.value)}
-        onHandle
         type="text"
         name="search"
         value={searchTerm}
