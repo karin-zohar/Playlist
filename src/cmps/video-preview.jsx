@@ -7,7 +7,7 @@ export function VideoPreview({ video }) {
       <div className="video-description">
         <h3>{video.title}</h3>
         <p>{video.description}</p>
-        <p>{video.views}</p>
+        <p>Views: {video.views}</p>
       </div>
     </article>
   );

@@ -1,8 +1,29 @@
 .search-bar {
   grid-column: 2 / span 2;
+
   input {
+    padding: 8px 12px;
     border-radius: 3px;
     border: none;
     margin-inline-end: 12px;
+    background-color: $clr3;
+    font-size: 16px;
+    color: white;
+
+    &::placeholder {
+      color: $clr4;
+    }
+  }
+
+  button {
+    background-color: $clr2;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    transition: all 0.1s;
+
+    &:hover {
+      background-color: $clr5;
+    }
   }
 }

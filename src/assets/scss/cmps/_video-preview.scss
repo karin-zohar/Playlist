@@ -3,6 +3,9 @@
   gap: 18px;
   height: 120px;
   background-color: $clr2;
+  border-radius: 3px;
+  cursor: pointer;
+
   img {
     width: 150px;
     min-width: 150px;
@@ -10,5 +13,19 @@
     height: fit-content;
     max-height: 120px;
     align-self: center;
+  }
+
+  .video-description {
+    padding: 8px 12px 12px 0;
+    h3 {
+      margin-block-end: 8px;
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      &:first-of-type {
+        margin-block-end: 4px;
+      }
+    }
   }
 }
