@@ -83,7 +83,7 @@ function makeData(res) {
     const videos = res.data.items.map(video => ({
         title: video.snippet.title,
         description: video.snippet.description,
-        imgUrl: video.snippet.thumbnails.default.url,
+        img: video.snippet.thumbnails.default.url,
         videoId: video.id.videoId
     }))
     return videos

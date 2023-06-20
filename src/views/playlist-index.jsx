@@ -8,6 +8,7 @@ import { httpService } from "../services/http.service"
 export function PlaylistIndex(props) {
   const [searchTerm, setSearchTerm] = useState("")
   const [videos, setVideos] = useState([])
+  const [currVideo, setCurrVideo] = useState('')
 
   console.log('videos - from index: ', videos)
 
@@ -15,7 +16,7 @@ export function PlaylistIndex(props) {
     e.preventDefault()
     loadVideos()
   }
-  
+
   async function loadVideos() {
     const requestUrl = videoService.getRequestUrl(searchTerm)
     const videos = await videoService.queryVideos(requestUrl) // returns array of video objects
@@ -28,8 +29,10 @@ export function PlaylistIndex(props) {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         searchVideo={searchVideo} />
-      <VideosList />
-      <VideoDisplay />
+      <VideosList
+        videos={videos}
+        setCurrVideo={setCurrVideo} />
+      <VideoDisplay currVideo={currVideo.videoId} />
     </div>
   )
 }
