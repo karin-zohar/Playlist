@@ -25,4 +25,22 @@ export const demoVideos = [
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1920px-Node.js_logo.svg.png",
       videoId: 'zb3Qk8SG5Ms'
     },
+    {
+      id: 4,
+      title: "Learn React With This One Project",
+      description:
+        "Learning React is hard. There are so many concepts to learn and mindsets shifts that you need to do.",
+      views: 20000,
+      img: "https://res.cloudinary.com/dqhfnvtca/image/upload/v1687266068/hq720_v4ximy.webp",
+      videoId: 'W6NZfCO5SIk'
+    },
+    {
+      id: 5,
+      title: "Angular in 100 Seconds",
+      description:
+        "Angular is arguably the most advanced frontend JavaScript framework ever created. Learn the basics of Angular in 100 Seconds.",
+      views: 1500,
+      img: "https://res.cloudinary.com/dqhfnvtca/image/upload/v1687266341/hq720_cjivp9.webp",
+      videoId: 'Ata9cSC2WpM'
+    },
   ]
