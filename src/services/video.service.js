@@ -2,7 +2,8 @@
 // import { storageService } from './async-storage.service.js'
 import { httpService } from './http.service.js'
 import { utilService } from './util.service.js'
-import { userService } from './user.service.js'
+// import { userService } from './user.service.js'
+import { API_KEY } from '../constants/api_key.js'
 
 
 const STORAGE_KEY = 'video'
@@ -13,7 +14,8 @@ export const videoService = {
     save,
     remove,
     getEmptyVideo,
-    addVideoMsg
+    addVideoMsg,
+    getRequestUrl
 }
 window.cs = videoService
 
@@ -56,6 +58,13 @@ function getEmptyVideo() {
 }
 
 
-
+function getRequestUrl(searchTerm) {
+    const maxResults = 5
+    const url = 'https://www.googleapis.com/youtube/v3/search';
+    const requestUrl = `${url}?part=snippet&videoEmbeddable=true&type=video&key=${API_KEY}&q=${searchTerm}&maxResults=${maxResults}`
+    console.log('requestUrl: ', requestUrl)
+    return requestUrl
+    
+  }
 
 
